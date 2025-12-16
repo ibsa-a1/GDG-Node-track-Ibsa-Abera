@@ -4,11 +4,7 @@ const port = 3000;
 
 app.get('/home', (req, res) => {
   res.status(200).send(`
-    <html>
-      <body>
-        <h1 style="color: green;">Welcome to the Home Page</h1>
-      </body>
-    </html>
+    <h1 style="color: green;">Welcome to the Home Page</h1>
   `)
 })
 
@@ -32,5 +28,5 @@ app.get("/students/:studentId", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Express Server is running on http://localhost:${port}`);
+  console.log(`Express Server is running on http://localhost:${port}/home`);
 })
